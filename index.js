@@ -1,10 +1,9 @@
-const express = require("express");
-const app = express();
-const port = 3000;
+// npm i express
+// npm i jest -D
+// npm i supertest -D
 
-app.get("/", (req, res) => {
-  res.send({ message: "Hello World!" });
-});
+const app = require('./app');
+const port = 3000;
 
 app.listen(port, (req, res) => {
   console.log(`Servidor rodando em http://localhost:${port}`);
